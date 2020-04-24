@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Button태그로 만든 버튼 Styles</h2>
+        <button type="button" class="btn">Basic</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-link">Link</button> 
+    
+
+
+        <h2>input태그로 만든 Button Elements</h2>
+        <a href="#" class="btn btn-info" role="button">Link Button</a>
+        <button type="button" class="btn btn-info">Button</button>
+        <input type="button" class="btn btn-info" value="Input Button">
+        <input type="submit" class="btn btn-info" value="Submit Button">
+
+
+
+        <h2>Button Outline</h2>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+
+
+
+        <h2>Button Sizes</h2>
+        <button type="button" class="btn btn-primary btn-lg">Large</button>
+        <button type="button" class="btn btn-primary btn-md">Default</button>    
+        <button type="button" class="btn btn-primary btn-sm">Small</button>
+
+
+
+        <h2>Spinner Buttons</h2>              
+        <button class="btn btn-info">
+          <span class="spinner-border spinner-border-sm"></span>
+        </button>
+      
+        <button class="btn btn-dark">
+          <span class="spinner-border spinner-border-sm"></span>
+          Loading..
+        </button>
+        
+        <button class="btn btn-success" disabled>
+          <span class="spinner-border spinner-border-sm"></span>
+          결제중...
+        </button>
+        
+        <button class="btn btn-primary" disabled>
+          <span class="spinner-grow spinner-grow-sm"></span>
+          Loading..
+        </button>
+
+
+        <h2>Buttons Groups</h2>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Menu1</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <button type="button" class="btn btn-primary">Sony</button>
+        </div>
+        
+        <br><br>
+
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-warning">Apple</button>
+            <button type="button" class="btn btn-warning">Samsung</button>
+            <button type="button" class="btn btn-warning">Sony</button>
+        </div>
+
+        <h2>Nesting Button Groups & Dropdown Menus</h2>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                 Sony
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Tablet</a>
+                <a class="dropdown-item" href="#">Smartphone</a>
+              </div>
+            </div>
+        </div>
+
+
+        <h2>버튼+드롭다운ㅇ메뉴+block속성 추가</h2>
+        <div class="btn-group btn-block">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                 Sony
+              </button>
+              <div class="dropdown-menu ">
+                <a class="dropdown-item" href="#">Tablet</a>
+                <a class="dropdown-item" href="#">Smartphone</a>
+              </div>
+            </div>
+        </div>
+
+      
+
+    </div>
+      
+</body>
+</html>
