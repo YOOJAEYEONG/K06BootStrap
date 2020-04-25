@@ -20,18 +20,17 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">   
     
-   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
 
 
-    <style>
+    <!-- <style>
         div{
             border: 1px solid red;
             text-align: center ;
         }
-        
-    </style>
+    </style> -->
 </head>
 <body>
     <div class="container-fluid">
@@ -70,10 +69,12 @@
                     
                                 
                                 <!-- Input Group 을 사용해서 하나의 그룹으로 표현 -->
-                                <div class="input-group justify-content-between" style="width: 250px; margin-left: 20px;">
-                                    <input type="text" class="form-control" placeholder="검색" style="margin-top: 1px;">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-light mt-0" type="submit">
+                                <div class="input-group " style="width: 250px; margin-left: 20px;">
+                   
+                                        <input type="text" class="form-control border-secondary" placeholder="검색" style="height: 40px; ">
+                    
+                                    <div class="input-group-append " style="height: 40px; ">
+                                        <button class="btn btn-light mt-0 border-secondary" type="submit" >
                                             <i class='fas fa-search' style='font-size:14px; color: gray;'></i>
                                         </button>
                                     </div>
@@ -87,7 +88,7 @@
                                     <span>
                                         <a class="nav-link justify-content-end" href="#" >
                                             <i class='glyphicon glyphicon-user' style='font-size:16px'></i>
-                                            회원가입
+                                            <i class='fas fa-user' style='font-size:16px'></i> 회원가입
                                         </a>
                                     </span>
                                 </li>
@@ -105,28 +106,53 @@
                     </nav>
             </div>
         </div>
-        
+        <!-- body영역 -->
         <div class="row"  >
-            <!-- body영역 -->
-            
-            
-            
             <div class="col-3">
                 <!-- 좌측메뉴 영역 -->
                 <div class="container p-3 my-3 bg-success text-white " style="height: 100px; border-radius: 10px;">
                     <h4 style="margin-top: 20px; ">현재매뉴명</h4>
                 </div>
-                <ul class="list-group">
-                    <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
-                    공지사항
-                    </li>
-                    <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
-                    자유게시판
-                    </li>
-                    <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
-                    Q&A
-                    </li>
-                </ul>
+                <!-- Accodian -->
+                <style>#accordion *{ border: 0; background-color: white;} </style>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header text-left">
+                            <a class="card-link text-dark" data-toggle="collapse" href="#collapseOne">
+                            회원제게시판
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                            회원제게시판-하위메뉴
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header text-left ">
+                            <a class="card-link text-dark" data-toggle="collapse" href="#collapseTwo">
+                            자료실
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                            자료실-하위메뉴
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header text-left">
+                            <a class="card-link text-dark" data-toggle="collapse" href="#collapseThree">
+                            임시메뉴 <i class='fas fa-caret-down' style='font-size:20px'></i>
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                            임시메뉴-하위메뉴
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <style>
@@ -138,31 +164,36 @@
             <div class="col-9">
                 <!-- 게시판영역 -->
 
-                <div class="container text-left">
+                <div class="container text-left mt-4">
                     <h4>게시판 <small>-이런저런 기능이 있는 게시판입니다.</small></h4>
                 </div>
                 
 
-                <div class="col-8 input-group mt-3 mb-3  justify-content-end text-right"style="text-align: right; ">
-                    <!-- <div class="input-group justify-content-end mr-0 pr-0"> -->
-                        <button type="button" class="btn btn-outline-secondary dropdown-toggle mr-0" data-toggle="dropdown">
-                            제목
-                        </button>
-                        <div class="dropdown-menu justify-content-end">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
-                        </div>
+                <div class=" input-group justify-content-end mt-3 mb-3 mr-0 pr-0" >
+                    
                         
-                    <!-- </div> -->
-                    <!-- <div class="input-group-append justify-content-between" style="width: 250px; margin-left: 20px;"> -->
-                        <input type="text" class="form-control" size="100px" style=" margin-top: 1px;">
-                        <div class="input-group-append">
-                            <button class="btn btn-light mt-0" type="submit">
-                                <i class='fas fa-search' style='font-size:14px; color: gray;'></i>
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle mr-2" data-toggle="dropdown">
+                                제목
                             </button>
+                            <div class="dropdown-menu ">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        
+                        <div class="input-group-append justify-content-end">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <input type="text " class="form-control " >
+                                </div>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary btn-light mt-0" type="submit">
+                                        <i class='fas fa-search' style='font-size:14px; color: gray;'></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    <!-- </div> -->
+                    
                 </div>
                 
                 <style>table>thead>tr>th:nth-child(2) {  width: 60%;  }</style>
@@ -184,7 +215,7 @@
                             <td>길똥이</td>
                             <td>2020-4-20</td>
                             <td>99</td>
-                            <td></td>
+                            <td><i class="material-icons" style="font-size: 18px;">attach_file</i></td>
                         </tr>
                         <tr>
                             <td>99</td>
@@ -192,7 +223,7 @@
                             <td>말똥이</td>
                             <td>2020-4-20</td>
                             <td>99</td>
-                            <td></td>
+                            <td><i class="material-icons" style="font-size: 18px;">attach_file</i></td>
                         </tr>
                         <tr>
                             <td>99</td>
@@ -200,7 +231,7 @@
                             <td>말똥이</td>
                             <td>2020-4-20</td>
                             <td>99</td>
-                            <td></td>
+                            <td><i class="material-icons" style="font-size: 18px;">attach_file</i></td>
                         </tr>
                         <tr>
                             <td>99</td>
@@ -208,7 +239,7 @@
                             <td>말똥이</td>
                             <td>2020-4-20</td>
                             <td>99</td>
-                            <td></td>
+                            <td><i class="material-icons" style="font-size: 18px;">attach_file</i></td>
                         </tr>
                         <tr>
                             <td>99</td>
@@ -216,7 +247,7 @@
                             <td>말똥이</td>
                             <td>2020-4-20</td>
                             <td>99</td>
-                            <td></td>
+                            <td><i class="material-icons" style="font-size: 18px;">attach_file</i></td>
                         </tr>
                         <tr>
                             <td>99</td>
@@ -224,7 +255,7 @@
                             <td>말똥이</td>
                             <td>2020-4-20</td>
                             <td>99</td>
-                            <td></td>
+                            <td><i class="material-icons" style="font-size: 18px;">attach_file</i></td>
                         </tr>
                     </tbody>
                 </table>
@@ -274,9 +305,10 @@
   
                 
             </div>
-
+            
         </div>
-        <div class="row text-center justify-content-center pt-10 mt-10 text-secondary " >
+        <div class="row text-center justify-content-center pt-10 mt-10 text-secondary " 
+            style="font-size: 0.8em;" >
 
             Email:liujaeyat@gmail.com Mobile:01026153215 Address:서울시금천구 독산동
             <br>copyright &copy;2020 한국소프트웨어인재개발원. All right reserved.
@@ -284,9 +316,7 @@
   
   
       </div>
+      
 
-      <br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br>
 </body>
 </html>
