@@ -35,68 +35,71 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row"> 
+        <div class="row "> 
             
             <!-- 헤드영역 -->
-            <div class="col-12 " >
-                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark mt-30 rounded-lg" >
+            <div class="col-12 mr-0" >
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark mt-30 pr-0 rounded-lg" >
                         <!-- Brand -->
                         <a class="navbar-brand" href="#"><img width="70" 
-                              src="http://www.ikosmo.co.kr/images/common/logo_center_v2.jpg" alt=""></a>
-                      
-                        <!-- Links -->
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">홈으로</a>
-                            </li>
-                            <li class="nav-item" >
-                                <a class="nav-link" href="#">회원제게시판</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">자료실</a>
-                            </li>
-                        
-                            <!-- Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                임시 Menu
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Link 1</a>
-                                    <a class="dropdown-item" href="#">Link 2</a>
-                                    <a class="dropdown-item" href="#">Link 3</a>
-                                </div>
-                            </li>
-                
-                    
-                            <!-- Input Group 을 사용해서 하나의 그룹으로 표현 -->
-                            <div class="input-group justify-content-between" style="width: 300px; margin-left: 20px;">
-                                <input type="text" class="form-control" placeholder="검색">
-                                <div class="input-group-append">
-                                    <button class="btn btn-light" type="submit">
-                                        <i class='fas fa-search' style='font-size:15px; color: gray;'></i>
-                                    </button>
-                                </div>
-                            </div>
-        
-        
-                            <li class="nav-item text-right">
-                                <span>
-                                    <a class="nav-link justify-content-end" href="#" >
-                                        <i class='glyphicon glyphicon-user' style='font-size:16px'></i>
-                                        회원가입
+                            src="http://www.ikosmo.co.kr/images/common/logo_center_v2.jpg" alt="">
+                        </a>
+                        <div class="col-8">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">홈으로</a>
+                                </li>
+                                <li class="nav-item" >
+                                    <a class="nav-link" href="#">회원제게시판</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">자료실</a>
+                                </li>
+                            
+                                <!-- Dropdown -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                    임시 Menu
                                     </a>
-                                </span>
-                            </li>
-                            <li class="nav-item text-right" >
-                                <span class="text-right">
-                                    <a class="nav-link text-right" href="#" >
-                                        <i class='fas fa-sign-in-alt' style='font-size:16px'></i>
-                                        로그인</a>
-                                </span>
-                            </li>
-                        </ul>
-                        
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Link 1</a>
+                                        <a class="dropdown-item" href="#">Link 2</a>
+                                        <a class="dropdown-item" href="#">Link 3</a>
+                                    </div>
+                                </li>
+                    
+                                
+                                <!-- Input Group 을 사용해서 하나의 그룹으로 표현 -->
+                                <div class="input-group justify-content-between" style="width: 250px; margin-left: 20px;">
+                                    <input type="text" class="form-control" placeholder="검색" style="margin-top: 1px;">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-light mt-0" type="submit">
+                                            <i class='fas fa-search' style='font-size:14px; color: gray;'></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+        
+                        <div class="col-3 pr-0 ">
+                            <ul class="navbar-nav justify-content-end">
+                                <li class="nav-item ">
+                                    <span>
+                                        <a class="nav-link justify-content-end" href="#" >
+                                            <i class='glyphicon glyphicon-user' style='font-size:16px'></i>
+                                            회원가입
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="nav-item text-right" >
+                                    <span class="text-right">
+                                        <a class="nav-link text-right" href="#" >
+                                            <i class='fas fa-sign-in-alt' style='font-size:16px'></i>
+                                            로그인</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
                         
                         
                     </nav>
@@ -140,18 +143,26 @@
                 </div>
                 
 
-                <div class=" input-group mt-3 mb-3  justify-content-end ">
-                    <div class="input-group-prepend justify-content-end">
-                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
-                        제목
+                <div class="col-8 input-group mt-3 mb-3  justify-content-end text-right"style="text-align: right; ">
+                    <!-- <div class="input-group justify-content-end mr-0 pr-0"> -->
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle mr-0" data-toggle="dropdown">
+                            제목
                         </button>
                         <div class="dropdown-menu justify-content-end">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
                         </div>
-                        <input type="text" class="form-control" placeholder="Username">
-                    </div>
+                        
+                    <!-- </div> -->
+                    <!-- <div class="input-group-append justify-content-between" style="width: 250px; margin-left: 20px;"> -->
+                        <input type="text" class="form-control" size="100px" style=" margin-top: 1px;">
+                        <div class="input-group-append">
+                            <button class="btn btn-light mt-0" type="submit">
+                                <i class='fas fa-search' style='font-size:14px; color: gray;'></i>
+                            </button>
+                        </div>
+                    <!-- </div> -->
                 </div>
                 
                 <style>table>thead>tr>th:nth-child(2) {  width: 60%;  }</style>
